@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdmitVerse - Student Consultation Forms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+            color: #1F2937;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 3rem;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2563EB;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #6B7280;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            font-size: 1rem;
+            color: #9CA3AF;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .form-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border: 1px solid #E5E7EB;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .form-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .form-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #EFF6FF;
+            color: #2563EB;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-badge.recommended {
+            background: linear-gradient(135deg, #2563EB, #3B82F6);
+            color: white;
+        }
+
+        .form-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1F2937;
+            margin-bottom: 0.75rem;
+        }
+
+        .form-description {
+            color: #6B7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+            color: #4B5563;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            color: #10B981;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            width: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #2563EB, #3B82F6);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #2563EB;
+            border: 1.5px solid #E5E7EB;
+        }
+
+        .btn-secondary:hover {
+            border-color: #2563EB;
+            background: #F8FAFC;
+        }
+
+        .footer {
+            text-align: center;
+            color: #9CA3AF;
+            font-size: 0.875rem;
+        }
+
+        .footer a {
+            color: #2563EB;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .form-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="logo">AdmitVerse</h1>
+            <p class="subtitle">Professional Education Consulting</p>
+            <p class="description">Choose your consultation form experience - from professional enterprise design to interactive unique layouts</p>
+        </div>
+
+        <div class="form-grid">
+            <!-- Professional Form -->
+            <div class="form-card">
+                <span class="form-badge recommended">Recommended</span>
+                <h2 class="form-title">Professional Form</h2>
+                <p class="form-description">Enterprise-grade consultation form with premium design and research-based timeline options.</p>
+                
+                <ul class="feature-list">
+                    <li>Professional enterprise UI/UX</li>
+                    <li>Research-based timeline options</li>
+                    <li>Premium typography and spacing</li>
+                    <li>Trust indicators and security badges</li>
+                    <li>Accessibility optimized</li>
+                    <li>Mobile responsive design</li>
+                </ul>
+                
+                <a href="admitverse-professional-form.html" class="btn">Start Professional Consultation</a>
+            </div>
+
+            <!-- Unique Form -->
+            <div class="form-card">
+                <span class="form-badge">Alternative</span>
+                <h2 class="form-title">Interactive Form</h2>
+                <p class="form-description">Unique design with interactive elements, animated backgrounds, and engaging user experience.</p>
+                
+                <ul class="feature-list">
+                    <li>Animated background elements</li>
+                    <li>Interactive progress tracking</li>
+                    <li>Live user counter</li>
+                    <li>Floating shapes and effects</li>
+                    <li>Brand-matched blue theme</li>
+                    <li>Success profile assessment</li>
+                </ul>
+                
+                <a href="admitverse-unique-form.html" class="btn btn-secondary">Try Interactive Version</a>
+            </div>
+
+            <!-- Original Form -->
+            <div class="form-card">
+                <span class="form-badge">Classic</span>
+                <h2 class="form-title">Original Form</h2>
+                <p class="form-description">The first version with clean design and essential consultation features.</p>
+                
+                <ul class="feature-list">
+                    <li>Clean and simple layout</li>
+                    <li>Essential consultation fields</li>
+                    <li>Fast loading and lightweight</li>
+                    <li>Basic validation</li>
+                    <li>Straightforward user flow</li>
+                    <li>Mobile friendly</li>
+                </ul>
+                
+                <a href="admitverse-form.html" class="btn btn-secondary">View Original</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Built for <a href="https://admitverse.com" target="_blank">AdmitVerse</a> - Professional Education Consulting</p>
+            <p style="margin-top: 0.5rem; font-size: 0.75rem;">🤖 Generated with Claude Code</p>
+        </div>
+    </div>
+</body>
+</html>
