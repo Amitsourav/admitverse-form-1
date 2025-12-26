@@ -101,7 +101,7 @@ const testimonials = [
   {
     name: 'Neha Kapil',
     date: '2 months ago',
-    text: 'As a student, I was initially nervous about the admission process, but AdmitVerse made everything so organized and easy to follow. Bibhash Sir\'s guidance was incredibly helpful. he patiently explained each step, clarified my doubts, and gave practical advice. I felt confident and supported throughout the entire journey.',
+    text: 'As a student, I was initially nervous about the admission process, but AdmitVerse made everything so organized and easy to follow. Bibhash Sir&apos;s guidance was incredibly helpful. he patiently explained each step, clarified my doubts, and gave practical advice. I felt confident and supported throughout the entire journey.',
     avatar: 'https://ui-avatars.com/api/?name=Neha+Kapil&background=8B5CF6',
     rating: 5
   }
@@ -365,7 +365,7 @@ export function AdmitVerseForm() {
             <h2 className="text-3xl font-bold mb-8 text-gray-900">Which Intake Are You Planning For?</h2>
             
             <div className="grid grid-cols-3 gap-4 mb-8">
-              {["Jan' 26", "May' 26", "Sep' 26"].map((intake) => (
+              {["Jan&apos; 26", "May&apos; 26", "Sep&apos; 26"].map((intake) => (
                 <button
                   key={intake}
                   onClick={() => {
@@ -378,7 +378,7 @@ export function AdmitVerseForm() {
                   className={`step-button ${formData.intake === intake ? 'selected' : ''}`}
                 >
                   {intake}
-                  {intake === "Jan' 26" && (
+                  {intake === "Jan&apos; 26" && (
                     <span className="block text-xs text-green-600 mt-2">Recommended</span>
                   )}
                 </button>
@@ -596,7 +596,7 @@ export function AdmitVerseForm() {
               </p>
 
               <p className="font-semibold mb-8">
-                P.S.: We don't spam, or use your data for illicit purpose
+                P.S.: We don&apos;t spam, or use your data for illicit purpose
               </p>
 
               <div className="flex justify-center">
@@ -621,7 +621,7 @@ export function AdmitVerseForm() {
             </div>
             
             <h3 className="text-xl font-semibold mb-4">
-              We'll be in touch shortly with you dcdc
+              We&apos;ll be in touch shortly with you dcdc
             </h3>
             
             <p className="text-gray-600 mb-12">
@@ -839,8 +839,8 @@ export function AdmitVerseForm() {
             </button>
 
             <div className="mb-8">
-              <p className="text-sm text-gray-600 mb-2">Great! Let's move to education</p>
-              <h2 className="text-3xl font-bold mb-8 text-gray-900">What's Your Academic History?</h2>
+              <p className="text-sm text-gray-600 mb-2">Great! Let&apos;s move to education</p>
+              <h2 className="text-3xl font-bold mb-8 text-gray-900">What&apos;s Your Academic History?</h2>
               
               <div className="space-y-8">
                 {/* 10th Class */}
@@ -1030,7 +1030,7 @@ export function AdmitVerseForm() {
               <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg p-6 text-white relative overflow-hidden">
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold mb-2">Studying abroad? Don't forget to pack smart.</h3>
+                    <h3 className="text-lg font-bold mb-2">Studying abroad? Don&apos;t forget to pack smart.</h3>
                     <p className="text-sm mb-4 opacity-90">
                       Everything you need to move abroad—curated, student-approved, and delivered
                     </p>
