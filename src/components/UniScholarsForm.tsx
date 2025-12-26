@@ -85,24 +85,24 @@ const courses = [
 
 const testimonials = [
   {
-    name: 'Sakshi Mahajan',
-    date: 'Sep 20, 2023',
-    text: 'Grateful to AdmitVerse and special thanks to Mr. Hasib Shaikh and Ms. Rupal Mehta for their guidance and support. Hasib helped with SOPs and my UK visa, while Rupal handled visa documentation.',
-    avatar: 'https://ui-avatars.com/api/?name=Sakshi+Mahajan&background=3B82F6',
+    name: 'Kaushi Rajput',
+    date: '2 months ago',
+    text: 'I had an excellent experience with this abroad education consultancy. From the very first counselling session, the team was extremely professional, knowledgeable, and genuinely supportive. They guided me step by step through the entire process, starting from selecting the right country and course to preparing my application, handling documentation, and even helping me understand visa requirements. They also kept me updated at every stage, which really reduced my stress. From university shortlisting to SOP and LOR guidance, everything was handled smoothly. The staff is friendly, approachable, and always ready to help. I also appreciate how transparent they were—there were no hidden charges or false promises, only genuine guidance based on my profile.',
+    avatar: 'https://ui-avatars.com/api/?name=Kaushi+Rajput&background=3B82F6',
     rating: 5
   },
   {
-    name: 'Arjun Patel',
-    date: 'Oct 15, 2023',
-    text: 'Amazing experience with AdmitVerse! The counselors were extremely knowledgeable and helped me secure admission to my dream university in Canada. Highly recommend their services.',
-    avatar: 'https://ui-avatars.com/api/?name=Arjun+Patel&background=10B981',
+    name: 'Shubham Rohatgi',
+    date: '2 months ago',
+    text: 'My brother literally had no clue on how to get admissions in Germany. We tried every possible thing be it local counsellors, multiple youtube channels but nothing gave us real clarity. AdmitVerse completely changed that for us. Their team was incredibly supportive, well-spoken, and determined throughout the entire process. They guided him step by step, explaining everything from exams to applications, and even helped tremendously with loan approval. All resulting my brother getting admission into one of the best universities in Germany. Honestly, AdmitVerse is a total stress saver. Much, much, much recommended!',
+    avatar: 'https://ui-avatars.com/api/?name=Shubham+Rohatgi&background=10B981',
     rating: 5
   },
   {
-    name: 'Priya Sharma',
-    date: 'Nov 8, 2023',
-    text: 'AdmitVerse made my study abroad journey seamless. From university selection to visa guidance, everything was handled professionally. Got into top universities in Australia!',
-    avatar: 'https://ui-avatars.com/api/?name=Priya+Sharma&background=8B5CF6',
+    name: 'Neha Kapil',
+    date: '2 months ago',
+    text: 'As a student, I was initially nervous about the admission process, but AdmitVerse made everything so organized and easy to follow. Bibhash Sir\'s guidance was incredibly helpful. he patiently explained each step, clarified my doubts, and gave practical advice. I felt confident and supported throughout the entire journey.',
+    avatar: 'https://ui-avatars.com/api/?name=Neha+Kapil&background=8B5CF6',
     rating: 5
   }
 ];
