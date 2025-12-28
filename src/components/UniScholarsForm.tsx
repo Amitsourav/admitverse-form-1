@@ -292,10 +292,10 @@ export function AdmitVerseForm() {
         {/* Step 1: Country Selection */}
         {currentStep === 1 && (
           <div className="animate-fade-in flex-1 flex flex-col">
-            <h2 className="text-3xl font-bold mb-3 text-center">Welcome To <span className="text-blue-600">Study Abroad</span> Journey!</h2>
-            <p className="text-lg text-gray-600 mb-8 text-center">Where Do You Plan To Study?</p>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-center px-4 sm:px-0">Welcome To <span className="text-blue-600">Study Abroad</span> Journey!</h2>
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 text-center px-4 sm:px-0">Where Do You Plan To Study?</p>
             
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8 max-w-6xl mx-auto w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-8 max-w-6xl mx-auto w-full px-4 sm:px-0">
               {countries.map((country) => (
                 <div
                   key={country.id}
@@ -341,9 +341,9 @@ export function AdmitVerseForm() {
         {/* Step 2: Level of Study & Intake */}
         {currentStep === 2 && (
           <div className="animate-fade-in">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900">What Are You Planning To Pursue?</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 sm:mb-8 text-gray-900 px-4 sm:px-0">What Are You Planning To Pursue?</h2>
             
-            <div className="grid grid-cols-2 gap-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 sm:mb-12">
               {['Bachelors', 'Masters'].map((level) => (
                 <button
                   key={level}
@@ -362,9 +362,9 @@ export function AdmitVerseForm() {
               ))}
             </div>
 
-            <h2 className="text-3xl font-bold mb-8 text-gray-900">Which Intake Are You Planning For?</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 sm:mb-8 text-gray-900 px-4 sm:px-0">Which Intake Are You Planning For?</h2>
             
-            <div className="grid grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               {["Jan&apos; 26", "May&apos; 26", "Sep&apos; 26"].map((intake) => (
                 <button
                   key={intake}
@@ -432,9 +432,9 @@ export function AdmitVerseForm() {
         {/* Step 3: Program Selection */}
         {currentStep === 3 && (
           <div className="animate-fade-in">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900">Which Course Do You Wish To Study?</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 sm:mb-8 text-gray-900 px-4 sm:px-0">Which Course Do You Wish To Study?</h2>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-8">
               {courses.map((course) => (
                 <button
                   key={course}
@@ -530,8 +530,8 @@ export function AdmitVerseForm() {
 
         {/* Step 5: Contact */}
         {currentStep === 5 && (
-          <div className="animate-fade-in">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+          <div className="animate-fade-in px-4 sm:px-6 md:px-8">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-gray-900">
               Amit, Share Your Contact Details, And Our Expert Counsellors Will Guide You Every Step Of The Way!
             </h2>
             
@@ -975,8 +975,8 @@ export function AdmitVerseForm() {
         {/* Step 9: Thank You Page */}
         {currentStep === 9 && (
           <div className="animate-fade-in max-w-2xl mx-auto text-center">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                 Yay! Thank You For Submitting Details!
               </h2>
               <p className="text-gray-600 mb-6">
